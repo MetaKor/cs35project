@@ -74,7 +74,7 @@ def getVideoList(playlistID, maxVids=5000, perPage=50, filename=''):
     if not filename == '':
         filetext = ''
         for vid in videos:
-            filetext += vid + '\n'
+            filetext += vid + ',\n'
         print(filetext,  file=open( filename + '.csv', 'w'))
 
     return videos
