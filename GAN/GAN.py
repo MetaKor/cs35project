@@ -16,7 +16,7 @@ slim = tf.contrib.slim
 
 HEIGHT, WIDTH, CHANNEL = 128, 128, 3
 BATCH_SIZE = 64
-EPOCH = 5000
+EPOCH = 250
 version = 'newclickbait'
 newclick_path = './' + version
 
@@ -235,12 +235,12 @@ def train():
 
             # print 'train:[%d/%d],d_loss:%f,g_loss:%f' % (i, j, dLoss, gLoss)
             
-        # save check point every 500 epoch
-        if i%500 == 0:
+        # save check point every 50 epoch
+        if i%50 == 0:
             if not os.path.exists('./model/' + version):
                 os.makedirs('./model/' + version)
             saver.save(sess, './model/' +version + '/' + str(i))  
-        if i%50 == 0:
+        if i%5 == 0:
             # save images
             if not os.path.exists(newclick_path):
                 os.makedirs(newclick_path)
