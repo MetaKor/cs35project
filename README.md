@@ -1,9 +1,30 @@
-# cs35project
-Our attempt to get a GAN (generative adversial network) to generate "clickbait" YouTube thumbnails.
+# pokeGAN
 
-## Yt Thumbnail Webscraping
-https://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api
-https://stackoverflow.com/questions/8286352/how-to-save-an-image-locally-using-python-whose-url-address-i-already-know
+## Overview
+This is the code for [this](https://youtu.be/yz6dNf7X7SA) video on Youtube by Siraj Raval. We'll use a WGAN to create new kinds of Pokemon. 
 
-## GAN
-https://github.com/llSourcell/Pokemon_GAN
+## Dependencies (pip install) 
+```
+cv2
+tensorflow( >=1.0)
+scipy
+numpy
+```
+## Usage
+```
+cd pokeGAN
+python resize.py
+python RGBA2RGB.py
+python pokeGAN.py
+```
+
+And open the notebook by typing in `jupyter notebook` in the root directory. Install it [here](http://jupyter.readthedocs.io/en/latest/install.html) if you haven't  
+
+## example pokemon
+![image1](https://github.com/moxiegushi/pokeGAN/raw/master/images/Notes_1500532347861.jpeg)
+
+![image2](https://github.com/moxiegushi/pokeGAN/raw/master/images/Notes_1500532371830.jpeg)
+
+## Credits
+
+The credits for this code go to [moxiegushi](https://github.com/moxiegushi/pokeGAN). I've merely created a wrapper to get people started. 
