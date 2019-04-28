@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #code from https://github.com/llSourcell/clickbait_GAN
 # generate clickbate youtube thumnails 
-# Luke & Jeff 
+# CS35 Project
 
 import os
 import tensorflow as tf
